@@ -6,22 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <title>Corporación Net Com SAC</title>
 </head>
 
+
 <body>
     <header>
-        <div class="logo-container">
-            <img src="../assets/LOGO.png" alt="Logo" class="logo">
-        </div>
-        <nav>
-            <ul> 
-                <li><a href="../index.html">Nosotros</a></li>
-                <li><a href="./ventajas.html">Ventajas del servicio de lavandería</a></li>
-                <li><a href="./contactabilidad.html">Contáctanos</a></li>
-                <li><a href="#">Nuestros Colaboradores</a></li>
-                <li><a href="./Nuestros_valores.html">Nuestros Valores</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/LOGO.png" alt="Logo" class="img-fluid responsive-logo" >
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ventajas.html">Ventajas del servicio de lavandería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactabilidad.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestros Colaboradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nuestros_valores.html">Nuestros Valores</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -37,12 +59,13 @@
         </h3>
         <img src="../assets/Girl_Doblado.png" alt="Señorita doblando" height="200">
     </main>
-    <footer>
-        <h4>© Todos los derechos reservados</h4>
-        <a href="https://wa.me/51963959562" target="_blank">
-            <img src="../assets/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-        </a>
-
+    <footer> 
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <h4>© Todos los derechos reservados</h4>
+            <a href="https://wa.me/51963959562" target="blank" class="ml-auto mr-auto">
+                <img src="../assets/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+            </a>
+        </div>
     </footer>
 </body>
 
