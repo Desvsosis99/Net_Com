@@ -96,7 +96,7 @@ form {
 @media (max-width: 576px) {
     .youtubeframe {
         max-width: 100%;
-        max-height: 40%;
+        max-height: 60%;
     }
 }
 
