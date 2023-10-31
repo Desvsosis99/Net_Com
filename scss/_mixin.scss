@@ -1,0 +1,52 @@
+@mixin lista-sin-numeros {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 8px; // Espacio entre elementos de la lista, ajustable según tu diseño.
+    }
+  }
+  @mixin lista-personalizada {
+    list-style-type: disc; 
+    padding-left: 20px;
+    li {
+      color: #333; // Un color personalizado, ajustable según tu diseño.
+      margin-bottom: 8px; 
+    }
+  }
+  @mixin lista-personalizada {
+    list-style-type: disc; 
+    padding-left: 20px;
+    li {
+      color: #333; // Un color personalizado, ajustable según tu diseño.
+      margin-bottom: 8px; 
+    }
+  }
+  @mixin lista-con-bolita {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      position: relative;
+      padding-left: 25px; // Este espacio es para que el texto no se superponga con la bolita
+      &::before {
+        content: ''; // Esto es necesario para que ::before funcione
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); // Esto centra verticalmente la bolita en relación con el texto
+        width: 10px; // Tamaño de la bolita
+        height: 10px;
+        background-color: #000; // Color de la bolita
+        border-radius: 50%; // Esto hace que sea un círculo perfecto
+      }
+    }
+  }
+  @mixin lista-ordenada-derecha {
+    direction: rtl; // Cambia la dirección del texto a "de derecha a izquierda"
+    list-style-position: inside; // Coloca el marcador de la lista (el número) dentro del elemento <li>
+  
+    li {
+      text-align: right; // Alinea el contenido del ítem a la derecha
+      direction: ltr; // Reestablece la dirección del texto a "de izquierda a derecha" para el contenido
+    }
+  }
+  

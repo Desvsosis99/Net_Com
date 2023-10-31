@@ -1,0 +1,12 @@
+footer {
+    background-color: $primary-color;
+    color: $dark-text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer h4 {
+        margin-left: 2rem;
+    }
+}
+

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'PoppinsLocal';
+    src: url(../fonts/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'PoppinsLocal', sans-serif;
+}
+
+header {
+    background-color: #3277bd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2a8ff3;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #3277bd;
+    color: #4d4646;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h4 {
+    margin-left: 2rem;
+}
+
+.whatsapp-logo {
+    width: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-left: 100px;
+}
+
+.logo-container {
+    margin-right: 1rem;
+}
+
+form {
+    margin: 5px 10px 12px 15px;
+}
+
+/* Media Queries menu Hamburguesa */
+@media (min-width: 721px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-collapse {
+        display: flex !important;
+    }
+}
+
+/* Responsive Logo */
+@media (max-width: 721px) {
+    .responsive-logo {
+        content: url('../assets/logo_media.png');
+        width: 40px;
+        height: auto;
+    }
+}
+
+.youtubeframe {
+    width: 560px;
+    height: 315px;
+}
+@media (max-width: 576px) {
+    .youtubeframe {
+        max-width: 100%;
+        max-height: 60%;
+    }
+}
+
+/* Responsive footer */
+@media (max-width: 721px) {
+    .whatsapp-logo {
+        margin-left: 10px;
+    }
+    footer h4 {
+        margin-left: 10px;
+    }
+}

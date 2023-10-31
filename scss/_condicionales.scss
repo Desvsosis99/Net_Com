@@ -1,0 +1,36 @@
+@media (min-width: $breakpoint-small) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .responsive-logo {
+        content: url('../assets/logo_media.png');
+        width: 40px;
+        height: auto;
+    }
+
+    .whatsapp-logo {
+        margin-left: 10px;
+    }
+
+    footer h4 {
+        margin-left: 10px;
+    }
+}
+
+.youtubeframe {
+    width: 560px;
+    height: 315px;
+
+    @media (max-width: 576px) {
+        max-width: 100%;
+        max-height: 60%;
+    }
+}
+
