@@ -19,7 +19,6 @@
     <meta name="keywords" content="lavandería industrial, lavandería hospitalaria, servicios de lavandería, soluciones de lavandería, hospitales, clínicas">
 </head>
 
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -52,12 +51,15 @@
     </header>
     <main>
         <H1>CONTÁCTANOS</H1>
-        <form action="" method="get">
-            <input type="Correo" placeholder="Correo electrónico">
-            <br>
-            <input type="Razón Social" placeholder="Razón social" name="raz_social" id="r_social">
-            <br>
-            <select name="Rubro" id="Rubro">
+        <form action="" method="get" class="contact-form">
+            <label for="email">Correo electrónico</label>
+            <input type="email" placeholder="Correo electrónico" class="form-input">
+            <label for="r_social">Razón social</label>
+            <input type="text" placeholder="Razón social" name="raz_social" id="r_social" class="form-input">
+            <label for="r_firma">Número RUC</label>
+            <input type="text" placeholder="Número RUC" name="ruc_firma" id="r_firma" class="form-input">
+            <label for="Rubro">Rubro</label>
+            <select name="Rubro" id="Rubro" class="form-select">
                 <option value="" disabled selected>Seleccione el Rubro</option>
                 <option value="1">Educación</option>
                 <option value="2">Hoteles/Hostales</option>
@@ -65,13 +67,15 @@
                 <option value="4">Clínicas privadas</option>
                 <option value="5">Otros</option>
             </select>
-            <br><br>
-            <button>
-                <h3>Enviar formulario</h3>
+            <button class="submit-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+                <span>Enviar</span>
             </button>
         </form>
     </main>
-    <footer>
         <footer> 
             <div class="d-flex justify-content-between align-items-center p-3">
                 <h4>© Todos los derechos reservados</h4>
